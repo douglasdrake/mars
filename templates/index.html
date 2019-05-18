@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Costa Rica Weather</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+    </div>
+    <h2>Latest Mars News</h2>
+    <h3>{{ news.news_title }}</h3>
+    <p>{{  news.news_p }}</p>
+    <h2>Featured Mars Image</h2>
+    <img src="{{ news.featured_image_url }}" alt="JPL Featured Image">
+    
+    <h3>Current Weather on Mars</h3>
+    <h4>{{news.mars_weather}}</h4>
+    <h3>Mars Facts</h3>
+    {{news.mars_facts}}
+
+    <h3>Mars Hemispheres</h3>
+    <img src="{{ news.hemisphere_image_urls[0].img_url }}" alt="JPL Featured Image">
+
+  </div>
+  </div>
+</body>
+
+</html>

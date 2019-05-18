@@ -13,3 +13,6 @@ MARS_FACTS_URL = "https://space-facts.com/mars/"
 # Images for Mars hemispheres
 MARS_USGS = "https://astrogeology.usgs.gov"
 MARS_HEMISPHERES = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
+
+# Mars weather
+MARS_WEATHER = "https://twitter.com/MarsWxReport?lang=en"
