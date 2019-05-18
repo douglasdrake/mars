@@ -37,20 +37,42 @@
                 </div>
     
             <h3>Mars Facts</h3>
-            {{ news.mars_facts }}
+            {{ news.mars_facts | safe }}
         </div>
     </div>
 
+    <div class="container">
+      <h3 align="text-center">Mars Hemispheres</h3>
+      <div class="row">
+        <div class="col-md-6"> 
+          <figure>
+              <img src="{{ news.hemhemisphere_image_urls[0].img_url }}" alt={{ news.hemhemisphere_image_urls[0].img_title }} class="img-thumbnail">
+              <figcaption> {{ news.hemhemisphere_image_urls[0].img_title }}  </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6"> 
+            <figure>
+                <img src="{{ news.hemhemisphere_image_urls[1].img_url }}" alt={{ news.hemhemisphere_image_urls[1].img_title }} class="img-thumbnail">
+                <figcaption> {{ news.hemhemisphere_image_urls[1].img_title }}  </figcaption>
+            </figure>
+        </div>
+      </div>
 
-    <h3>Mars Hemispheres</h3>
-    <ul style="list-style: none;">
-    {% for item in news.hemisphere_image_urls %}
-    <li>{{ item.img_url }}</li>
-    {% endfor %}
-    </ul>
-
-
-  </div>
+      <div class="row">
+        <div class="col-md-6"> 
+            <figure>
+                <img src="{{ news.hemhemisphere_image_urls[2].img_url }}" alt={{ news.hemhemisphere_image_urls[2].img_title }} class="img-thumbnail">
+                <figcaption> {{ news.hemhemisphere_image_urls[2].img_title }}  </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6"> 
+              <figure>
+                  <img src="{{ news.hemhemisphere_image_urls[3].img_url }}" alt={{ news.hemhemisphere_image_urls[3].img_title }} class="img-thumbnail">
+                  <figcaption> {{ news.hemhemisphere_image_urls[3].img_title }}  </figcaption>
+              </figure>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
