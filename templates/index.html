@@ -24,17 +24,17 @@
         <p>{{  news.news_p }}</p>
     </div>
     <div class="row">  
-        <div class="col-md-8">  
-            <h2>Featured Mars Image</h2>
-            <img src="{{ news.featured_image_url }}" alt="JPL Featured Image" class="img-thumbnail">
+        <div class="col-md-8"> 
+            <h3>Featured Mars Image</h3>
+            <img class="img-responsive" src="{{ news.featured_image_url }}" alt="JPL Featured Image" width: 50%>
         </div>
         <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Current Weather on Mars</h4>
-                        <p class="card-text">{{news.mars_weather}}</p>
-                    </div>
-                </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h4 class="card-title">Current Weather on Mars</h4>
+                <p class="card-text">{{news.mars_weather}}</p>
+              </div>
+            </div>
     
             <h3>Mars Facts</h3>
             {{ news.mars_facts | safe }}
@@ -42,36 +42,36 @@
     </div>
 
     <div class="container">
-      <h3 align="text-center">Mars Hemispheres</h3>
+      <h2 align="center">Mars Hemispheres</h2>
       <div class="row">
         <div class="col-md-6"> 
-          <figure>
-              <img src="{{ news.hemisphere_image_urls[0].img_url }}" alt={{ news.hemisphere_image_urls[0].img_title }} class="img-thumbnail">
-              <figcaption> {{ news.hemisphere_image_urls[0].img_title }}  </figcaption>
-          </figure>
+          <img class="img-responsive" src="{{ news.hemisphere_image_urls[0].img_url }}" alt={{ news.hemisphere_image_urls[0].title }} width: 50%>
+          <h3> {{ news.hemisphere_image_urls[0].title }}  </h3>
+          
         </div>
         <div class="col-md-6"> 
-            <figure>
-                <img src="{{ news.hemisphere_image_urls[1].img_url }}" alt={{ news.hemisphere_image_urls[1].img_title }} class="img-thumbnail">
-                <figcaption> {{ news.hemisphere_image_urls[1].img_title }}  </figcaption>
-            </figure>
+          <img class="img-responsive" src="{{ news.hemisphere_image_urls[1].img_url }}" alt={{ news.hemisphere_image_urls[1].title }} width: 50%>
+          <p>
+          <h3 align="center"> {{ news.hemisphere_image_urls[1].title }}  </h3>
+          </p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-6"> 
-            <figure>
-                <img src="{{ news.hemisphere_image_urls[2].img_url }}" alt={{ news.hemisphere_image_urls[2].img_title }} class="img-thumbnail">
-                <figcaption> {{ news.hemisphere_image_urls[2].img_title }}  </figcaption>
-            </figure>
+          <div class="col-md-6"> 
+            <img class="img-responsive" src="{{ news.hemisphere_image_urls[2].img_url }}" alt={{ news.hemisphere_image_urls[2].title }} width: 50%>
+          
+            <h3> {{ news.hemisphere_image_urls[2].title }}  </h3>
+           
+          </div>
+          <div class="col-md-6"> 
+            <img class="img-responsive" src="{{ news.hemisphere_image_urls[3].img_url }}" alt={{ news.hemisphere_image_urls[3].title }} width: 50%>
+            <p>
+            <h3 align="center"> {{ news.hemisphere_image_urls[3].title }}  </h3>
+            </p>
+          </div>
         </div>
-        <div class="col-md-6"> 
-              <figure>
-                  <img src="{{ news.hemisphere_image_urls[3].img_url }}" alt={{ news.hemisphere_image_urls[3].img_title }} class="img-thumbnail">
-                  <figcaption> {{ news.hemisphere_image_urls[3].img_title }}  </figcaption>
-              </figure>
-        </div>
-      </div>
+
     </div>
   </div>
 </body>

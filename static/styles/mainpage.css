@@ -1,0 +1,41 @@
+
+#mainpic {
+    max_width: auto;
+    max_heigth: 300px;
+}
+
+@media (max-width:767px) {
+    #mainpic {
+      float: none;
+      max-width: auto;
+      max-height: 250px;
+      padding: 10px;
+    }
+}
+
+/*
+html, body {
+    height:100%;
+}
+*/
+.content {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:left;
+    height:auto;
+}
+
+#thumbnail-image {
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+}
+
+#thumbnail-container{
+    width:100%;   
+    border:0px;
+    max-height:70%;
+    height:70%;
+    margin-top:12px;
+    margin-bottom:12px;    
+    }
