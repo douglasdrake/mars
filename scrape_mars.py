@@ -92,7 +92,7 @@ def scrape_mars_facts(mars_facts_url = mars.MARS_FACTS_URL):
     """
     """
     tables = pd.read_html(mars_facts_url)
-    mars_df = tables[0]
+    mars_df = tables[1] # this needed to be changed from 0 - should be a more robust way to get this information
     mars_df.columns = ["description", "value"]
     mars_df.set_index("description", inplace=True)
     
