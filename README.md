@@ -11,9 +11,13 @@
 * `splinter` is used to visit the sites.
 * Beautiful Soup, `bs4`, is used to parse and scrape the sites.
 * The results of the scraping are saved in a MongoDB.
-* Finally, the results are rendered in a template.
+* Finally, the results are rendered in an HTML template.
 
 `app.py` provides the Flask app and `scrape_mars.py` contains the functions used for scraping.
+
+# Results
+* [Jupyter notebook with results from 10-21-2019 scrape](https://nbviewer.jupyter.org/github/douglasdrake/mars/blob/master/scrape_mars.ipynb).
+
 
 
 
